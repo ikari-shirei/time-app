@@ -13,9 +13,22 @@
   background: $color1;
   border: 1px solid $color1;
   color: $color2;
+  transition: 250ms;
+
+  &:hover {
+    color: $color1;
+    background: $color2;
+    border: 1px solid $color2;
+  }
 }
 .secondaryButton {
   background-color: transparent;
   color: $color1;
   border: 1px solid $color2;
+  transition: 250ms;
+
+  &:hover {
+    color: $color2;
+    border: 1px solid $color1;
+  }
 }

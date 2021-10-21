@@ -18,6 +18,11 @@
         cursor: pointer;
         text-align: center;
         background-color: $color2;
+        transition: 250ms;
+
+        &:hover {
+          opacity: 80%;
+        }
       }
     }
 
