@@ -21,7 +21,6 @@ function Meter({ selectedTime, setIsStarted }) {
         ? { min: time.min - 1, sec: 59 }
         : { min: time.min, sec: time.sec - 1 }
 
-    console.log(newTime)
     setTime(newTime)
   }
 
@@ -54,7 +53,8 @@ function Meter({ selectedTime, setIsStarted }) {
       <div>
         <div className="clock-container">
           <h4>
-            {time.min} : {time.sec}
+            {time.min <= 9 ? '0' + String(time.min) : time.min} :{' '}
+            {time.sec <= 9 ? '0' + String(time.sec) : time.sec}
           </h4>
         </div>
         <div className="buttons-container">
