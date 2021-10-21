@@ -2,12 +2,16 @@ import { useState, useEffect } from 'react'
 import './meter.scss'
 import moment from 'moment'
 import Button from './Button'
+import useSound from 'use-sound'
+import alert from '../sound/alert-evangelion.mp3'
 
 function Meter({ selectedTime, setIsStarted }) {
   const [currentTime, setCurrentTime] = useState(moment().format('HH:mm:ss'))
   const [time, setTime] = useState({ min: selectedTime, sec: 0 })
   const [restartButton, setRestartButton] = useState(false)
   const [isPaused, setIsPaused] = useState(false)
+
+  const [newAlert, { stop }] = useSound(alert)
 
   useEffect(() => {
     setInterval(() => {
@@ -34,7 +38,7 @@ function Meter({ selectedTime, setIsStarted }) {
 
   useEffect(() => {
     if (time.min === 0 && time.sec === 0) {
-      alert('done')
+      newAlert()
       setRestartButton(true)
     }
   }, [time])
@@ -45,6 +49,7 @@ function Meter({ selectedTime, setIsStarted }) {
 
   const handleGoBack = () => {
     setIsStarted(false)
+    stop()
   }
 
   return (
