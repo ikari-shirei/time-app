@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import CurrentTime from './CurrentTime'
 import TimeOptions from './TimeOptions'
 import Meter from './Meter'

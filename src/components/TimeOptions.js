@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './timeOptions.scss'
 import Button from './Button'
 
