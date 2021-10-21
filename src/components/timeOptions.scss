@@ -25,9 +25,20 @@
       button {
         color: $color2 !important;
         background-color: $color1 !important;
-
         border-radius: 5px;
       }
+    }
+  }
+
+  .start-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    button {
+      margin-top: 32px;
+      align-self: center;
     }
   }
 }

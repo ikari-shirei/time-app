@@ -72,13 +72,15 @@ function TimeOptions({ selectedTime, setSelectedTime, setIsStarted }) {
           )
         })}
       </div>
-      <Button
-        name="primary"
-        selectedTime={selectedTime}
-        onClick={handleStartButton}
-      >
-        Start
-      </Button>
+      <div className="start-button-container">
+        <Button
+          name="primary"
+          selectedTime={selectedTime}
+          onClick={handleStartButton}
+        >
+          Start
+        </Button>
+      </div>
     </div>
   )
 }
