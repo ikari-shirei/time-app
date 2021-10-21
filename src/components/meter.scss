@@ -1,0 +1,36 @@
+@import '../index.scss';
+
+.meter {
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .clock-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    background-color: $color2;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+
+    h4 {
+      font-size: 32px;
+    }
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    margin-top: 16px;
+  }
+}

@@ -1,0 +1,33 @@
+@import '../index.scss';
+
+.timeOptions {
+  margin: 0 16px;
+
+  .time-options-container {
+    display: flex;
+    justify-content: space-between;
+
+    .time-options-cell {
+      button {
+        color: $color1;
+        font-weight: bold;
+        border: 0;
+        border-radius: 5px;
+        margin: 0;
+        padding: 8px;
+        cursor: pointer;
+        text-align: center;
+        background-color: $color2;
+      }
+    }
+
+    .active {
+      button {
+        color: $color2 !important;
+        background-color: $color1 !important;
+
+        border-radius: 5px;
+      }
+    }
+  }
+}

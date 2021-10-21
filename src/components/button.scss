@@ -1,0 +1,20 @@
+@import '../index.scss';
+
+.button {
+  padding: 4px;
+  width: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 16px 0;
+}
+
+.primaryButton {
+  background: $color1;
+  border: 1px solid $color1;
+  color: $color2;
+}
+.secondaryButton {
+  background-color: transparent;
+  color: $color1;
+  border: 1px solid $color2;
+}
