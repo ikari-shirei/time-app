@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/time-app/static/css/main.414f91d0.chunk.css",
+    "main.js": "/time-app/static/js/main.ce4f5567.chunk.js",
+    "main.js.map": "/time-app/static/js/main.ce4f5567.chunk.js.map",
+    "runtime-main.js": "/time-app/static/js/runtime-main.e169d27a.js",
+    "runtime-main.js.map": "/time-app/static/js/runtime-main.e169d27a.js.map",
+    "static/js/2.9cb46773.chunk.js": "/time-app/static/js/2.9cb46773.chunk.js",
+    "static/js/2.9cb46773.chunk.js.map": "/time-app/static/js/2.9cb46773.chunk.js.map",
+    "static/js/3.109bca32.chunk.js": "/time-app/static/js/3.109bca32.chunk.js",
+    "static/js/3.109bca32.chunk.js.map": "/time-app/static/js/3.109bca32.chunk.js.map",
+    "index.html": "/time-app/index.html",
+    "static/css/main.414f91d0.chunk.css.map": "/time-app/static/css/main.414f91d0.chunk.css.map",
+    "static/js/2.9cb46773.chunk.js.LICENSE.txt": "/time-app/static/js/2.9cb46773.chunk.js.LICENSE.txt",
+    "static/js/3.109bca32.chunk.js.LICENSE.txt": "/time-app/static/js/3.109bca32.chunk.js.LICENSE.txt",
+    "static/media/alert-evangelion.d675b919.mp3": "/time-app/static/media/alert-evangelion.d675b919.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e169d27a.js",
+    "static/js/2.9cb46773.chunk.js",
+    "static/css/main.414f91d0.chunk.css",
+    "static/js/main.ce4f5567.chunk.js"
+  ]
+}
