@@ -5,7 +5,7 @@ import Button from './Button'
 import useSound from 'use-sound'
 import alert from '../sound/alert-evangelion.mp3'
 
-function Meter({ selectedTime, setIsStarted }) {
+function Meter({ selectedTime, setSelectedTime, setIsStarted }) {
   const [currentTime, setCurrentTime] = useState(moment().format('HH:mm:ss'))
   const [time, setTime] = useState({ min: selectedTime, sec: 0 })
   const [restartButton, setRestartButton] = useState(false)
@@ -49,6 +49,7 @@ function Meter({ selectedTime, setIsStarted }) {
 
   const handleGoBack = () => {
     setIsStarted(false)
+    setSelectedTime(10)
     stop()
   }
 
