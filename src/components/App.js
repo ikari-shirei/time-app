@@ -11,7 +11,11 @@ function App() {
     <div className="App">
       <CurrentTime />
       {isStarted ? (
-        <Meter selectedTime={selectedTime} setIsStarted={setIsStarted} />
+        <Meter
+          selectedTime={selectedTime}
+          setSelectedTime={setSelectedTime}
+          setIsStarted={setIsStarted}
+        />
       ) : (
         <TimeOptions
           selectedTime={selectedTime}
